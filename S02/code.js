@@ -3,6 +3,7 @@
 // commit from workstation
 //
 //
+// commit from github
 class Human {
     // old syntax
     //myproperty1 = 'test';
