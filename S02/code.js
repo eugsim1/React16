@@ -4,6 +4,8 @@
 //
 //
 // commit from github
+// commit from local
+//
 class Human {
     // old syntax
     //myproperty1 = 'test';
