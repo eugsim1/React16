@@ -9,6 +9,8 @@
 // test git fetch origin
 // last update
 
+// and this in on the workstation
+
 class Human {
     // old syntax
     //myproperty1 = 'test';
