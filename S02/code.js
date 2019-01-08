@@ -1,13 +1,10 @@
 // understanding classes
 class Human {
     // old syntax
-
     //myproperty1 = 'test';
-
     constructor() {
         this.gender = 'male';
     }
-
     printGender() {
         console.log(this.gender);
     }
@@ -26,9 +23,7 @@ class Person extends Human {
     }
 }
 
-
 ///
-
 const person = new Person();
 person.printMyName();
 person.printGender();
