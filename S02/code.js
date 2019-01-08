@@ -6,6 +6,8 @@
 // commit from github
 // commit from local
 //
+// test git fetch origin
+
 class Human {
     // old syntax
     //myproperty1 = 'test';
