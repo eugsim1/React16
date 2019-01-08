@@ -1,0 +1,5 @@
+npm install -g create-react-app
+mkidr create-react-app
+cd create-react-app
+create-react-app react-complete-guide
+npm start
