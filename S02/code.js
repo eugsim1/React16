@@ -1,5 +1,8 @@
 // understanding classes
 // commit1
+// commit from workstation
+//
+//
 class Human {
     // old syntax
     //myproperty1 = 'test';
