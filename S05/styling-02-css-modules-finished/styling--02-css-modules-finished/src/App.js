@@ -61,10 +61,17 @@ class App extends Component {
           } )}
         </div>
       );
+// assign a new property 
 
+/*
+.App button.Red {
+  background-color: red;
+}
+*/
       btnClass = classes.Red;
     }
 
+    // array of string 
     const assignedClasses = [];
     if ( this.state.persons.length <= 2 ) {
       assignedClasses.push( classes.red ); // classes = ['red']
