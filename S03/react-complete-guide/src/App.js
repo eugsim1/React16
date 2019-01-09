@@ -14,9 +14,13 @@ class App extends Component {
          return (
              <div className = "App">
             <h1> Hi i m a react application </h1> 
+            <p>This is really working</p>
             </div>
         ); 
+     // all previous line are compile to the code below ...
+     // class name shoud be used instead of class   
      //   return React.createElement('div', null, 'h1', 'Hi ......');
+     // one root element /component
     }
 }
 
