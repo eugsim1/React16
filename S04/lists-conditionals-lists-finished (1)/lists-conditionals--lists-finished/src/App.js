@@ -40,7 +40,7 @@ class App extends Component {
   }
 
   togglePersonsHandler = () => {
-    const doesShow = this.state.showPersons;
+    const doesShow = this.state.showPersons;  // treu of false
     this.setState( { showPersons: !doesShow } );
   }
 
@@ -54,10 +54,29 @@ class App extends Component {
     };
 
     let persons = null;
+    // check to see if varble should be rentred
+    // person variable  => to JSX code
+
+    // dynamic rendering a list of elements
+    //
 
     if ( this.state.showPersons ) {
       persons = (
         <div>
+        {/*
+          curlly braces for javascript scope
+          map convert array (javascript)
+          this.state.person.map(person => ..)
+          person.name person.age, person.id ...
+        */}
+        {this.state.persons.map((person, index) => {
+          return <Person
+            name={person.name} 
+            age={person.age}
+            key={person.id}
+            />
+        })}
+        {/*
           {this.state.persons.map((person, index) => {
             return <Person
               click={() => this.deletePersonHandler(index)}
@@ -66,10 +85,13 @@ class App extends Component {
               key={person.id}
               changed={(event) => this.nameChangedHandler(event, person.id)} />
           })}
+        */}
         </div>
       );
     }
 
+    // return will handle no the persons variable
+    // and renter it
     return (
       <div className="App">
         <h1>Hi, I'm a React App</h1>
@@ -77,6 +99,9 @@ class App extends Component {
         <button
           style={style}
           onClick={this.togglePersonsHandler}>Toggle Persons</button>
+          {/*
+            persons rendre nothing or all 
+          */}
         {persons}
       </div>
     );
